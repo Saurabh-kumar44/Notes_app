@@ -1,5 +1,5 @@
 console.log('Welcome to the app');
-shownotes();//called here too because when wwe reload the page all nodes disapper so on calling pre prevent this
+shownotes();//called here too because when we reload the page all nodes disapper so on calling pre prevent this
 
 //if user add a note in localstorage
 let addbtn = document.getElementById('addbtn');
@@ -34,12 +34,12 @@ function shownotes(){//Function to show elements of local storage
     notesObj.forEach(function(element , index){
         //it means in html this card get append in the html string
         html +=`
-        <div class="my-2 mx-2 card" style="width: 18rem;">
+        <div class="Mcard my-2 mx-2 card" style="width: 18rem;">
         <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
           <h5 class="card-title">Notes ${index + 1}</h5>
           <p class="card-text">${element}</p>
-          <button id='${index}' onclick='deleteNote(this.id)' class="btn btn-primary">delete note</button>
+          <button id='${index}' onclick='deleteNote(this.id)' class="btn btn-danger">delete note</button>
         </div>
       </div>`
     });
@@ -48,7 +48,7 @@ function shownotes(){//Function to show elements of local storage
         notesElm.innerHTML = html;
     }
     else{
-        notesElm.innerHTML = `Nothing to show! "Add a node" section above to add notes.`
+        notesElm.innerHTML = `Nothing to show! "Add a note" section above to add notes.`
     }
 }
 
