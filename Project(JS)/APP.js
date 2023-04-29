@@ -37,7 +37,7 @@ function shownotes(){//Function to show elements of local storage
         <div class="Mcard my-2 mx-2 card" style="width: 18rem;">
         <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
-          <h5 class="card-title">Notes ${index + 1}</h5>
+          <h5 class="card-title">Note ${index + 1}</h5>
           <p class="card-text">${element}</p>
           <button id='${index}' onclick='deleteNote(this.id)' class="btn btn-danger">delete note</button>
         </div>
